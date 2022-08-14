@@ -1,0 +1,12 @@
+answer_42 = (input("What is the Answer to the Great Question of Life? "))
+
+#check to see if input is 42, forty-two or forty two, if so yes if not - no
+
+if answer_42.strip() == '42':
+    print('yes')
+elif answer_42.casefold().strip() == 'forty two':
+     print('yes')
+elif answer_42.casefold().strip() == 'forty-two':
+     print('yes')
+else:
+    print('no')
